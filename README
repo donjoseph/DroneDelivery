@@ -10,7 +10,7 @@ To execute the test cases run the following java class files as JUnit test cases
    drone.test.DroneRunnerScenario5
    drone.test.DroneRunnerFromFile
    
-Feature files for the tests:
+Feature files for the tests :
    resources.Features.DroneScenario1_3_4
    resources.Features.DroneScenario2_3_4
    resources.Features.DroneScenario5
