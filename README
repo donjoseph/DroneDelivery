@@ -1,0 +1,46 @@
+DroneDelivery- Test Automation
+Written by Don Bosco Joseph (db.joseph1991@gmail.com)
+
+*******************************************************
+Running:
+
+To execute the test cases run the following java class files as JUnit test cases:
+   drone.test.DroneRunnerScenario1_3_4
+   drone.test.DroneRunnerScenario2_3_4
+   drone.test.DroneRunnerScenario5
+   drone.test.DroneRunnerFromFile
+   
+Feature files for the tests:
+   resources.Features.DroneScenario1_3_4
+   resources.Features.DroneScenario2_3_4
+   resources.Features.DroneScenario5
+   resources.Features.DroneScenariosFromFile
+   
+Configurable parameters in drone.config.Constants java class file:
+
+    public static final String splitter="##";
+	public static final String orderSplitter=" ";
+	public static final double speed=1;
+	public static final String startTime="06:00:00";
+	public static final String endTime="22:00:00";
+	public static final String orderStartTime="05:00:00";
+	public static final double promotorLimit=1.5*3600;
+	public static final double detractorLimit=3.5*3600;
+	public static final double orderMaxDistance=10*3600;//equals to 600 blocks
+	public static final String inputFileLocation=System.getProperty("user.dir")+"/src/test/resources/data/input";
+	public static final String outputFileLocationProcessed=System.getProperty("user.dir")+"/src/test/resources/data/output/expected_output/processed";
+	public static final String outputFileLocationRejected=System.getProperty("user.dir")+"/src/test/resources/data/output/expected_output/rejected";
+	public static final String outputFileLocationActual=System.getProperty("user.dir")+"/src/test/resources/data/output/actual_output";
+	
+
+================================================================
+
+A number of assumptions were made in this code:
+* Only one drone is available
+* A number of items should be configurable as shown in the usage page
+* The path taken by the drone is the shortest distance calculated by Pythegoras theorem
+* At a time only one order will be delivered
+* Once a delivery is picked up,drone cannot come back without fulfilling the delivery
+* A configurable property orderMaxDistance is introduced for city limit to maximize NPS
+* A configurable property orderStartTime is introduced to maximize NPS
+* Invalid orders will be skipped and logged
