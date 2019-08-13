@@ -1,0 +1,6 @@
+WM001 N11W5 04:59:90 Order cancelled reason:time is not valid
+WM004 N11E5 21:59:50 Order cancelled reason: Delivery time/Return time exceeds 10 pm
+WM005 N11E5 22:30:50 Order cancelled reason: Delivery time/Return time exceeds 10 pm
+WM006 N11E9 22:59:50 Order cancelled reason: Delivery time/Return time exceeds 10 pm
+WM007 N11E5 23:39:50 Order cancelled reason: Delivery time/Return time exceeds 10 pm
+WM008 N11E5 23:59:50 Order cancelled reason: Delivery time/Return time exceeds 10 pm
